@@ -5,10 +5,10 @@ import tensorflow as tf
 from utils.utils import load_ann_model,load_preprocessor
 import os
 
-preprocessor_path=os.path.join("artifacts","preprocessor.pkl")
+preprocessor_path=os.path.join("artifacts","classification","preprocessor.pkl")
 preprocessor=load_preprocessor(preprocessor_path)
 
-model_path=os.path.join("artifacts","model.h5")
+model_path=os.path.join("artifacts","classification","model.h5")
 model=load_ann_model(model_path)
 
 ## streamlit app
